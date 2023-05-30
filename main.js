@@ -1,11 +1,13 @@
 const form = document.forms.entrada;
         form.addEventListener('submit', envia);
 let estado = 0;
-        function envia(evento){
-            evento.preventDefault ();
-            console.log('Formulario enviado!');
-            estado++;
-            atualiza();
+
+atualiza();
+    function envia(evento){
+        evento.preventDefault ();
+        console.log('Formulario enviado!');
+        estado++;
+        atualiza();
         }
 
         function atualiza(){
